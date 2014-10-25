@@ -11,18 +11,18 @@
  footer { background-color: #333; color: #dadada; height: 100px; margin-top: 60px;}
 
 @media (max-width: 768px) {
-	div {border: 1px red solid}
+	div {border: 1px}
 	.mainimage {padding-top: 10px}
 }
 
 @media (max-width: 600px) {
-	div {border: 1px green solid}
+	div {border: 1px}
 	.mainimage {display: none;}
 	.container {padding-top: 100px}
 }
 
 @media (max-width: 500px) {
-	div {border: 1px orange solid}
+	div {border: 1px}
 	h1 {font-size: 3em; font-weight: 400;}
  .subhead {font-size: 3em; font-weight: 100; padding-bottom: 60px;}
  .mainimage {padding-top: 100px}
