@@ -52,7 +52,7 @@
       <h1 class="text-center">This is Cronkat!</h1>
       <h3 class="text-center subhead">I'm visiting from Chicago. Nice to be here.</h3>
 
-      <div class="row">
+      <div class="row" id="thumbnails">
         <div class="col-lg-8 col-md-4 col-sm-6">
           <img class="kitty" src="http://placekitten.com/g/400/300"/>
           <p>Caption information about the photo here.</p>
@@ -110,6 +110,17 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+    <script type="text/javascript">
+    // This waits for the page to load completely before it activates
+    $(document).ready(function(){
+      $('#thumbnails .kitty').mouseover( function(){
+        $(this).fadeTo("slow", 1);
+      });
+      $('#thumbnails .kitty').mouseout( function(){
+        $(this).fadeTo("slow", 0.6);
+      });
+    });
+    </script>
   </body>
 
 </html>
