@@ -3,8 +3,39 @@
   <head>
     <title>ASU Amazing</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
   </head>
+
+<style>
+ .kitty {width: 100%;}
+ #thumbnails .kitty {opacity: 0.6;}
+
+ h1 {font-size: 6em; font-weight: 100;}
+ .subhead {font-size: 3em; font-weight: 100; padding-bottom: 60px;}
+
+ .mainimage {padding-top: 40px}
+
+ p {padding-top: 10px;}
+
+ footer { background-color: #333; color: #dadada; height: 100px; margin-top: 60px;}
+
+@media (max-width: 768px) {
+  div {border: 1px}
+  .mainimage {padding-top: 10px}
+}
+
+@media (max-width: 600px) {
+  div {border: 1px}
+  .mainimage {display: none;}
+  .container {padding-top: 100px}
+}
+
+@media (max-width: 500px) {
+  div {border: 1px}
+  h1 {font-size: 3em; font-weight: 400;}
+ .subhead {font-size: 3em; font-weight: 100; padding-bottom: 60px;}
+ .mainimage {padding-top: 100px}
+}
+</style>
 
   <body>
 
@@ -107,8 +138,8 @@
         <p class="text-center">Copyright AwesomePeeps 2014</p>
     </footer>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
     // This waits for the page to load completely before it activates
@@ -118,6 +149,7 @@
       });
       $('#thumbnails .kitty').mouseout( function(){
         $(this).fadeTo("slow", 0.6);
+        $(this).tog
       });
     });
     </script>
