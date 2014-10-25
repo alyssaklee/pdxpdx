@@ -1,0 +1,29 @@
+ .kitty {width: 100%;}
+
+ h1 {font-size: 6em; font-weight: 100;}
+ .subhead {font-size: 3em; font-weight: 100; padding-bottom: 60px;}
+
+ .mainimage {padding-top: 40px}
+
+ p {padding-top: 10px;}
+
+ footer { background-color: #333; color: #dadada; height: 100px; margin-top: 60px;}
+
+@media (max-width: 768px) {
+	div {border: 1px red solid}
+	.mainimage {padding-top: 10px}
+}
+
+@media (max-width: 600px) {
+	div {border: 1px green solid}
+	.mainimage {display: none;}
+	.container {padding-top: 100px}
+}
+
+@media (max-width: 500px) {
+	div {border: 1px orange solid}
+	h1 {font-size: 3em; font-weight: 400;}
+ .subhead {font-size: 3em; font-weight: 100; padding-bottom: 60px;}
+ .mainimage {padding-top: 100px}
+}
+
